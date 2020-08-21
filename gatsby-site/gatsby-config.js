@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `DMD`,
-        short_name: `DMD`,
+        name: `Rest Countries`,
+        short_name: `Countries`,
         start_url: `/`,
         background_color: `#282834`,
         theme_color: `#C00E4D`,
