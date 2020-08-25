@@ -15,11 +15,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rest Countries`,
-        short_name: `Countries`,
+        name: `Movie Database`,
+        short_name: `Movie DB`,
         start_url: `/`,
-        background_color: `#282834`,
-        theme_color: `#C00E4D`,
+        background_color: `#1E2129`,
+        theme_color: `#00B2C1`,
         display: `standalone`,
         icons: [
           {

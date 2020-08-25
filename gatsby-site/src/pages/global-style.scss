@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Arial Black", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html, body {
@@ -15,13 +15,12 @@ html, body {
 
 .page-content {
     main {
-        .search-wrapper {
-            border: 1px solid red;
+        form {
             text-align: center;
-            margin-top: 180px;
+            margin-top: 100px;
 
             label {
-                font-size: 32px;
+                font-size: 36px;
             }
 
             input {
@@ -41,25 +40,80 @@ html, body {
         }
 
         .results-wrapper {
-            border: 1px solid green;
+            width: 70%;
+            margin: 4px auto 36px;
+
+            .movie-card {
+                background-color: white;
+                color: rgba($light-gray, 0.9);
+                padding: 3px 12px;
+                border-bottom: 1px solid rgba($light-gray, 0.2);
+                border-left: 2px solid $dark-gray;
+                border-right: 2px solid $dark-gray;
+
+                .title {
+                    display: block;
+                    font-weight: bold;
+                    color: $light-gray;
+                }
+
+                .rating span {
+                    color: $light-blue;
+                    font-weight: bold;
+                }
+
+                .year {
+                    display: inline-block;
+                    margin-left: 12px;
+                }
+
+                .genres {
+                    display: block;
+                    margin-top: 3px;
+                }
+
+                .more-info {
+                    display: inline-block;
+                    text-decoration: none;
+                    background-color: $light-blue;
+                    color: white;
+                    padding: 1px 4px 2px;
+                    margin: 6px 0 2px;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
         }
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .page-content main .search-wrapper {
-        margin-top: 120px;
+    .page-content main {
+        form {
+            margin-top: 70px;
+
+            input {
+                width: 85%;
+            }
+        }
+
+        .results-wrapper {
+            width: 85%;
+        }
     }
 }
 
 @media only screen and (max-width: 520px) {
-    .page-content main .search-wrapper input {
-        width: 80%;
+    .page-content main {
+        form input,
+        .results-wrapper {
+            width: 90%;
+        }
     }
 }
 
 @media only screen and (max-width: 360px) {
-    .page-content main .search-wrapper {
+    .page-content main form {
         label {
             font-size: 30px;
         }

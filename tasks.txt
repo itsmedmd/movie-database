@@ -1,5 +1,6 @@
 ---------------------general---------------------
-change gatsby-config.js theme and background colors
+
+create debounce
 
 ---------------------general---------------------
 

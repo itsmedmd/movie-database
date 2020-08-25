@@ -7,10 +7,11 @@ export default function MovieCard({movie, genres}) {
 
   return (
       <div className="movie-card">
-          <p>{movie.title}</p>
-          <p>Rating: {movie.vote_average}</p>
-          <p>{movie.release_date.split("-")[0]}</p>
-          <p>{movieGenres.join(", ")}</p>
+          <span className="title">{movie.title}</span>
+          <span className="rating">Rating: <span>{movie.vote_average}</span></span>
+          <span className="year">{movie.release_date.split("-")[0]}</span>
+          <span className="genres">{movieGenres.join(", ")}</span>
+          <a className="more-info" href={`https://www.themoviedb.org/movie/${movie.id}`}>More information</a>
       </div>
   );
 }

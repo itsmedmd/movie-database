@@ -11,7 +11,7 @@ export default function Main({genres}) {
     .then(data => setMovies(data.results));
   };
 
-  // only execute fetch if the input is at least 3 characters
+  // only execute fetch if the input is at least 3 characters long
   const handleSearch = (e) => {
     if(e.target.value.length >= 3) {
       getMovies(e.target.value);
@@ -20,10 +20,10 @@ export default function Main({genres}) {
 
   return (
       <main>
-        <div className="search-wrapper">
+        <form onSubmit={(e) => e.preventDefault()}>
           <label htmlFor="movie">Search for a movie</label><br/>
-          <input type="text/css" name="movie" id="movie" onChange={handleSearch}/>
-        </div>
+          <input type="text/css" name="movie" id="movie" onChange={handleSearch} autoComplete="off"/>
+        </form>
         {movies ? <Movies movies={movies} genres={genres}/> : null}
       </main>
   );
