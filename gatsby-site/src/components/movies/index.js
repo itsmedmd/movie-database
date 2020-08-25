@@ -11,7 +11,7 @@ export default function Movies({movies, genres}) {
 
   return (
       <div className="results-wrapper">
-          {results}
+          {results ? results : null}
       </div>
   );
 }
