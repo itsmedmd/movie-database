@@ -80,6 +80,7 @@ html, body {
 .page-content main .results-wrapper .movie-card .movie-details .genres {
   display: block;
   margin-top: 3px;
+  height: 21px;
 }
 
 .page-content main .results-wrapper .movie-card .movie-details .more-info {
