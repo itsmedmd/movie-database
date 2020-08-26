@@ -49,36 +49,48 @@ html, body {
                 padding: 3px 12px;
                 border-bottom: 1px solid rgba($light-gray, 0.2);
 
-                .title {
-                    display: block;
-                    font-weight: bold;
-                    color: $light-gray;
+                img {
+                    display: inline;
+                    position: absolute;
+                    margin: 12px 12px 6px 0;
+                    vertical-align: top;
                 }
 
-                .rating span {
-                    color: $light-blue;
-                    font-weight: bold;
-                }
-
-                .year {
+                .movie-details {
                     display: inline-block;
-                    margin-left: 12px;
-                }
+                    margin-left: 57px;
 
-                .genres {
-                    display: block;
-                    margin-top: 3px;
-                }
-
-                .more-info {
-                    display: inline-block;
-                    text-decoration: none;
-                    background-color: $light-blue;
-                    color: white;
-                    padding: 1px 4px 2px;
-                    margin: 4px 0 2px;
-                    font-size: 15px;
-                    font-weight: bold;
+                    .title {
+                        display: block;
+                        font-weight: bold;
+                        color: $light-gray;
+                    }
+    
+                    .rating span {
+                        color: $light-blue;
+                        font-weight: bold;
+                    }
+    
+                    .year {
+                        display: inline-block;
+                        margin-left: 12px;
+                    }
+    
+                    .genres {
+                        display: block;
+                        margin-top: 3px;
+                    }
+    
+                    .more-info {
+                        display: inline-block;
+                        text-decoration: none;
+                        background-color: $light-blue;
+                        color: white;
+                        padding: 1px 4px 2px;
+                        margin: 4px 0 2px;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
                 }
             }
         }

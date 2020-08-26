@@ -1,16 +1,20 @@
-import React, { useState, useCallback } from "react"
+import React, { useState, useCallback, useEffect } from "react"
 import Movies from '../movies';
 import debounce from "../../scripts/debounce";
 
 export default function Main({genres}) {
   const [movies, setMovies] = useState();
 
-  // get movies that match the input
+  // on page load focus the input
+  useEffect(() => {
+    document.getElementById("movie").focus();
+  }, []);
+
+  // get movies that match the input + sort by popularity and return only 4 movies
   const getMovies = (query) => {
-    console.log("fire function");
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=20bbccce1133a0c3fa23ae9af625a36b&language=en-US&query=${query}`)
     .then(res => res.json())
-    .then(data => setMovies(data.results));
+    .then(data => setMovies(data.results.sort((a, b) => b.popularity - a.popularity).slice(0, 4)));
   };
 
   // only execute fetch if the input is at least 3 characters long

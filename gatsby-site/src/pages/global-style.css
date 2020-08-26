@@ -48,28 +48,40 @@ html, body {
   border-bottom: 1px solid rgba(48, 48, 48, 0.2);
 }
 
-.page-content main .results-wrapper .movie-card .title {
+.page-content main .results-wrapper .movie-card img {
+  display: inline;
+  position: absolute;
+  margin: 12px 12px 6px 0;
+  vertical-align: top;
+}
+
+.page-content main .results-wrapper .movie-card .movie-details {
+  display: inline-block;
+  margin-left: 57px;
+}
+
+.page-content main .results-wrapper .movie-card .movie-details .title {
   display: block;
   font-weight: bold;
   color: #303030;
 }
 
-.page-content main .results-wrapper .movie-card .rating span {
+.page-content main .results-wrapper .movie-card .movie-details .rating span {
   color: #00B2C1;
   font-weight: bold;
 }
 
-.page-content main .results-wrapper .movie-card .year {
+.page-content main .results-wrapper .movie-card .movie-details .year {
   display: inline-block;
   margin-left: 12px;
 }
 
-.page-content main .results-wrapper .movie-card .genres {
+.page-content main .results-wrapper .movie-card .movie-details .genres {
   display: block;
   margin-top: 3px;
 }
 
-.page-content main .results-wrapper .movie-card .more-info {
+.page-content main .results-wrapper .movie-card .movie-details .more-info {
   display: inline-block;
   text-decoration: none;
   background-color: #00B2C1;
