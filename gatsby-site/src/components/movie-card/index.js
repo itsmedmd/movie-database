@@ -7,7 +7,7 @@ export default function MovieCard({movie, genres}) {
 
   return (
       <div className="movie-card">
-          <img src={`https://image.tmdb.org/t/p/w45${movie.poster_path}`} alt={`${movie.title} poster image`}/>
+          <img src={`https://image.tmdb.org/t/p/w45${movie.poster_path}`} alt={`${movie.title} poster`}/>
           <div className="movie-details">
             <span className="title">{movie.title}</span>
             <span className="rating">Rating: <span>{movie.vote_average}</span></span>
