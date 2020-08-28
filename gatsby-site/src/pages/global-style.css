@@ -12,6 +12,17 @@ html, body {
   color: white;
 }
 
+.page-content .go-back-to-homepage {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 10px;
+  background-color: #c00e4d;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
 .page-content main form {
   text-align: center;
   margin-top: 100px;
