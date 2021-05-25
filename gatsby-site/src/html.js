@@ -11,23 +11,23 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>{`DMD - Project 2 - Movie Database`}</title>
+        <title>{`Deimantas Butėnas - Movie Search System`}</title>
         <meta name="title" content="Frontend developer Deimantas Butėnas" />
         <meta name="description" content="A portfolio website of Deimantas Butėnas where you can see his work!" />
         <meta name="keywords" content="web development, frontend, portfolio, design, web design" />
-        <link rel="canonical" href="https://www.deimantasbutenas.lt/" />
+        <link rel="canonical" href="https://www.deimantasb.com/" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.deimantasbutenas.lt/" />
+        <meta property="og:url" content="https://www.deimantasb.com/" />
         <meta property="og:title" content="Frontend developer Deimantas Butėnas" />
         <meta property="og:description" content="A portfolio website of Deimantas Butėnas where you can see his work!" />
-        <meta property="og:image" content="https://www.deimantasbutenas.lt/meta-og-image.png" />
+        <meta property="og:image" content="https://www.deimantasb.com/meta-og-image.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.deimantasbutenas.lt/" />
+        <meta property="twitter:url" content="https://www.deimantasb.com/" />
         <meta property="twitter:title" content="Frontend developer Deimantas Butėnas" />
         <meta property="twitter:description" content="A portfolio website of Deimantas Butėnas where you can see his work!" />
-        <meta property="twitter:image" content="https://www.deimantasbutenas.lt/meta-og-image.png" />
+        <meta property="twitter:image" content="https://www.deimantasb.com/meta-og-image.png" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

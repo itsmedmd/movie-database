@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  pathPrefix: `/projects/2/preview`,
+  pathPrefix: `/projects/movie-search-system/preview`,
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Movie Database`,
+        name: `Movie Search System`,
         short_name: `Movie DB`,
         start_url: `/`,
         background_color: `#1E2129`,
